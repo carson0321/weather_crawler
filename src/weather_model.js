@@ -23,7 +23,7 @@ const weather_schema = new mongoose.Schema({
     obs_time:  String,
     weather_elements:[{elementName: String, elementValue: String}],
     update_date: { type: Date, default: Date.now },
-});
+}, {versionKey: false});
 
 const Weather = mongoose.model('Weather', weather_schema);
 
