@@ -1,7 +1,5 @@
 /*
  * @Author: carson.wang
- * @Date: 2019-08-22 15:37:03 
- * @Last Modified time: 2019-08-22 15:37:03 
  */
 
 const config = require('./config');

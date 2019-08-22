@@ -1,7 +1,5 @@
 /*
  * @Author: carson.wang 
- * @Date: 2019-08-22 15:50:13 
- * @Last Modified time: 2019-08-22 15:50:13 
  */
 
 const Weather = require('./weather_model');

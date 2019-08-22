@@ -1,7 +1,5 @@
 /*
  * @Author: carson.wang
- * @Date: 2019-08-21 13:05:21 
- * @Last Modified time: 2019-08-21 13:05:21 
  */
 
 const Joi = require('joi');
