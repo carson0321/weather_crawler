@@ -43,7 +43,7 @@ const crawl = async(api_name) => {
                 town_sn: parameter[3].parameterValue,
             })));
             
-            for(let i =0; i < clean_data.length; i++) {
+            for(let i=0; i < clean_data.length; i++) {
                 clean_data[i].forEach((raw_data) => {
                     new Weather(raw_data).save().then(() => console.log('save successfully'));
                   })
