@@ -1,6 +1,8 @@
 # Weather crawler
 
-Simple weather crawler from open weather data API that we can access to current weather data.
+Simple weather crawler from open weather data API (CWB) that we can access to current weather data.
+
+P.S. CWB's API is https://opendata.cwb.gov.tw/dist/opendata-swagger.html
 
 ## How to use
 
@@ -9,10 +11,15 @@ Simple weather crawler from open weather data API that we can access to current 
 
 To be continued
 
+Notice: You must provide a vailad **ACCESS_KEY** for open weather data API in **.env**
+
+
 ## Environment
 
 * node 10.16.3
 * yarn 1.17.3
+* docker 19.03.1
+* docker-compose 1.24.1
 
 ## LICENSE
 
