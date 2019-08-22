@@ -49,6 +49,9 @@ const crawl = async(api_name) => {
                   })
             }
         }
+        else {
+            throw new Error(`status_code: ${response.statusCode} An error occurred: ${error}`);
+        }
     });
 };
 

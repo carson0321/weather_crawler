@@ -8,6 +8,9 @@ const mongoose = require('mongoose');
 const db_url = `mongodb://${config.DB_USERNAME}:${config.DB_PASSWORD}@${config.DB_HOST}:${config.DB_PORT} /${config.DB_NAME}`;
 mongoose.connect(db_url, { useNewUrlParser: true }, (err, res) => {
     // if(! err)  console.log(res);
+    if(err){
+        throw new Error(`Mongo error: ${err}`);
+    }
 });
 
 const weather_schema = new mongoose.Schema({
