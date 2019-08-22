@@ -11,10 +11,15 @@ mongoose.connect(db_url, { useNewUrlParser: true }, (err, res) => {
 });
 
 const weather_schema = new mongoose.Schema({
+    _id: String,
     city: String,
     city_sn: Number,
     town: String,
     town_sn: Number,
+    lat: Number,
+    lon: Number,
+    location_name: String,
+    station_id: String,
     obs_time:  String,
     weather_elements:[{elementName: String, elementValue: String}],
     update_date: { type: Date, default: Date.now },
