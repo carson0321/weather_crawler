@@ -1,15 +1,16 @@
 # Weather crawler
 
-Simple weather crawler from open weather data API (CWB) that we can access to current weather data.
+Simple weather crawler that we can access to current weather data from open weather data API (CWB)
 
-P.S. CWB's API is https://opendata.cwb.gov.tw/dist/opendata-swagger.html
+P.S. CWB's API: https://opendata.cwb.gov.tw/dist/opendata-swagger.html
 
 ## How to use
 
 1. `cp .env.example .env`
 2. `docker-compose up -d`
-
-To be continued
+3. `yarn install`
+4. `yarn start`
+5. `curl -X GET "http://localhost:8080/get_weather/%E8%87%BA%E5%8C%97%E5%B8%82"` (臺北市)
 
 Notice: You must provide a vailad **ACCESS_KEY** for open weather data API in **.env**
 

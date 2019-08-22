@@ -10,7 +10,7 @@ const router = express.Router();
 router.param('city', (req, res, next, city) => {
     const valid_cities = ['臺北市', '新北市', '桃園市']
     if(!valid_cities.includes(city)) {
-        res.status(400).send({message: 'Bad Request.'});
+        return res.status(400).send({message: 'Bad Request.'});
     }
     req.city = city;
     next();

@@ -15,7 +15,7 @@ const crawl = async(api_name) => {
             'accept': 'application/json',
         },
     };
-    return await request(options, (error, response, body) => {
+    await request(options, (error, response, body) => {
         if (!error && response.statusCode == 200) {
             const data = JSON.parse(body)['records']['location'];
             const cities = ['臺北市', '新北市', '桃園市'];
